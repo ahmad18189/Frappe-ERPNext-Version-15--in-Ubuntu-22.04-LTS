@@ -173,6 +173,13 @@ Now press (Ctrl-X) to exit
     
 
 ### STEP 12 install frappe-bench
+    nano /etc/pip.conf
+ADD 
+
+    [global]
+    break-system-packages = true
+
+Install frappe
 
     sudo -H pip3 install frappe-bench
     
